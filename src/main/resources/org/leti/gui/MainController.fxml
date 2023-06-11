@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="572.0" prefWidth="1184.0" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.leti.gui.MainController">
+   <children>
+      <ImageView fitHeight="562.0" fitWidth="1024.0" layoutX="28.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pictures/2k_earth_grid.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="satelliteIcon1" fitHeight="37.0" fitWidth="44.0" layoutX="28.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pictures/satelliteRedIcon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="newOrderButton" mnemonicParsing="false" onAction="#openNewOrderWindow" prefHeight="25.0" prefWidth="110.0" text="Новый заказ" />
+      <Button layoutX="110.0" mnemonicParsing="false" onAction="#showCompletedOrders" prefHeight="25.0" prefWidth="136.0" text="Выполненные заказы" />
+      <ImageView fx:id="satelliteIcon2" fitHeight="37.0" fitWidth="44.0" layoutX="29.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pictures/satellitePurpleIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="118.0" layoutY="31.0" text="200" />
+      <Label layoutX="4.0" layoutY="341.0" text="600" />
+      <Label layoutX="219.0" layoutY="31.0" text="400" />
+      <Label layoutX="320.0" layoutY="31.0" text="600" />
+      <Label layoutX="4.0" layoutY="240.0" text="400" />
+      <Label layoutX="420.0" layoutY="31.0" text="800" />
+      <Label layoutX="517.0" layoutY="31.0" text="1000" />
+      <Label layoutX="618.0" layoutY="31.0" text="1200" />
+      <Label layoutX="1020.0" layoutY="31.0" text="2000" />
+      <Label layoutX="718.0" layoutY="31.0" text="1400" />
+      <Label layoutX="819.0" layoutY="31.0" text="1600" />
+      <Label layoutX="4.0" layoutY="441.0" text="800" />
+      <Label layoutX="919.0" layoutY="31.0" text="1800" />
+      <Label layoutX="4.0" layoutY="140.0" text="200" />
+      <Label layoutX="1.0" layoutY="548.0" text="1000" />
+      <Label layoutX="11.0" layoutY="31.0" text="0" />
+      <Line endX="627.0" layoutX="557.0" layoutY="25.0" startX="-556.0" stroke="#4a4646" />
+      <ListView fx:id="listView" layoutX="1060.0" layoutY="48.0" prefHeight="512.0" prefWidth="121.0" />
+      <Label layoutX="1070.0" layoutY="31.0" text="Активные заказы:" />
+      <Line endX="-3.0" endY="413.29290771484375" layoutX="1059.0" layoutY="167.0" startX="-3.0" startY="-141.5" stroke="#4a4646" />
+      <ImageView fx:id="satelliteIcon3" fitHeight="37.0" fitWidth="44.0" layoutX="28.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pictures/satelliteGreenIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="satelliteIcon4" fitHeight="37.0" fitWidth="44.0" layoutX="28.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pictures/satelliteOrangeIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
